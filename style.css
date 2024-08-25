@@ -1,5 +1,284 @@
 *{
-    margin: 0;
-    padding: 0;
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 
+body{
+    background-color: #F3F5FC;
+    height: 885px;
+}
+main{
+    display: flex;
+    background-color: #F3F5FC;
+    width: auto;
+}
+
+.encabezado{
+    height: 6%;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: #F3F5FC;
+}
+
+.logo{
+    width: 12dvh;
+    height: auto;
+}
+
+.seccion1{
+    width: 65%;
+    height: 80dvh;
+    text-align: center;
+    background-color: #F3F5FC;
+}
+
+.text-area{
+    width: 70%;
+    height: 58dvh;
+    background-color: #F3F5FC;
+    margin-top: 40px;
+    color: #2354a9;
+    font-size: 20px;
+    border: none;
+    resize: none;
+    text-transform: lowercase;
+}
+
+::placeholder { 
+    color: #99add1;
+    font-size: 20px;
+}
+
+    .text-area:focus {
+      outline: none;
+    }
+   
+
+
+.texto-info{
+    width: 72%;
+    margin-left: 15%;
+    margin-right: 55%;
+    text-align: start;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #a3a5a8;
+}
+
+.signo-exclamacion{
+    height: 13px;
+    width: 12px;
+    margin-top:5px;
+    padding-right: 5px;
+}
+
+.botones{
+    background-color: #F3F5FC;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-encriptar, .btn-desencriptar{
+    width: 34%;
+    height: 70px;
+    border-radius: 24px;
+    margin-top: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.btn-encriptar{
+    margin-right: 35px;
+    background-color: #0A3871;
+    color: #F3F5FC;
+}
+
+.btn-desencriptar{
+    color: #0A3871;
+    border-color: #0A3871;
+    border: 1px solid #0A3871;
+    background-color: #d8dfe8;
+}
+
+.Contenedor_munieco{
+    width: 30%;
+    height: 80dvh;
+    text-align: center;
+    margin-right: 9dvh;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 28px;
+    box-shadow: whitesmoke;
+    box-shadow: -2px 10px 20px #bbbbb8;
+}
+
+.munieco{
+    width: auto;
+    background: #ffffff;
+    height: 30dvh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: center;
+    margin-top: 70px;
+}
+
+.contenedor-info-munieco{
+    width: 80%;
+    background: #ffffff;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert_munieco{
+    width: 55%;
+    background: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.texto_munieco{
+    width: 85%;
+    background: #ffffff;
+    font-size: 13px;
+    color: #babfc4;
+}
+
+.btn-copiar{
+    width: 45%;
+    height: 50px;
+    margin-top: 16dvh;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: #D8DFE8;
+    font-size: 15px;
+}
+
+.pie-de-pagina{
+    background-color: #3a3d42;
+    height: 50px;
+    width: 100%;
+    margin-top: 5dvh;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #D8DFE8;
+}
+
+@media screen and (max-width: 1250px) {
+   
+    .Contenedor_munieco{
+        width: 40%;
+        margin-right: 2%;
+    }
+
+    .btn-copiar{
+        margin-top: 30%;
+    }
+
+    .seccion1{
+        width: 60%;
+        height: 100%;
+    }
+
+    .btn-encriptar, .btn-desencriptar{
+        width: 32%;
+        font-size: 12px;
+    }
+
+    .Contenedor_munieco{
+        width:40dvh;
+        margin-right: 4dvh;
+    }
+
+    .munieco{
+        width: 25dvh;
+        height: 24dvh;
+        margin-top: 12dvh;
+    }
+
+    .contenedor-info-munieco{
+        width: 85%;
+    }
+
+    .btn-copiar{
+        margin-top: 17dvh;
+    }
+}
+
+@media screen and ( max-width:760px ) {
+
+    .encabezado{
+        margin-left: initial;
+        margin-right: initial;
+        margin-top: 4dvh;
+    }
+
+    .logo{
+        width: 10dvh;
+        height: auto;
+    }
+
+    body{
+        height: 100%;
+    }
+    
+    main{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .seccion1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-area{
+        width: 85%;
+        height: 65dvh;
+        margin-top: 15px;
+    }
+
+    .botones{
+        width: 100%;
+        height: 14dvh;
+        flex-direction: column;
+        margin-bottom: 15px;
+        align-items: center;
+        margin-bottom: 8dvh;
+    }
+
+    .btn-encriptar,.btn-desencriptar{
+        margin-left: initial;
+        margin-right: initial;
+        width: 90%;
+        font-size: 11px;
+    }
+
+    .Contenedor_munieco{
+        width: 100%;
+    }
+
+    .munieco{
+        width: 65%;
+    }
+
+    .contenedor-info-munieco{
+        width: 85%;
+    }
+
+    .btn-copiar{
+        margin-top: 25%;
+    }
+}
