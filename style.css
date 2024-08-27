@@ -39,10 +39,10 @@ main{
     background-color: #F3F5FC;
     margin-top: 40px;
     color: #2354a9;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     resize: none;
-    text-transform: lowercase;
+
 }
 
 ::placeholder { 
@@ -129,6 +129,22 @@ main{
     margin-top: 70px;
 }
 
+.resultado{
+    width: 94%;
+    background: #ffffff;
+    height: 44dvh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: center;
+    margin-top: 90px;
+    margin: 18px;
+    padding: 5px;
+    display: none;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
 .contenedor-info-munieco{
     width: 80%;
     background: #ffffff;
@@ -174,6 +190,8 @@ main{
     font-size: 13px;
     color: #D8DFE8;
 }
+
+/*---------ENCRPTADOR RESPONSIVE-------------------------------------------------------------------*/
 
 @media screen and (max-width: 2240px) {
     main{
